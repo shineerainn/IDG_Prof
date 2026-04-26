@@ -1,0 +1,18 @@
+package com.bupt.middleware.entity.origin;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class PgGrowthEnvironment {
+    private String pgId;              // 学号，主键
+    private String parentsEducation;  // 父母受教育程度
+    private String familyIncome;     // 家庭经济水平
+    private String hometown;         // 成长环境
+    private Boolean isOnlyChild;     // 是否独生子女
+}
